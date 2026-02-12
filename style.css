@@ -1,0 +1,303 @@
+/* ===== Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+body {
+    line-height: 1.6;
+    background: #ffffff;
+    padding-top: 80px;    
+}
+/* ===== Container ===== */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+/* ===== Header ===== */
+header {
+    background: #e6e6fa;   /* Soft pastel lavender */
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Logo Styling */
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #6a5acd;   /* Dark lavender for contrast */
+}
+/* Buttons */
+.auth-buttons a {
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: #000;   /* Black text */
+    transition: 0.3s;
+}
+/* Log In Button */
+.login-btn {
+    background: #f8f4ff;   /* Very light lavender */
+    border: 1px solid #d8cfff;
+}
+/* Sign Up Button */
+.signup-btn {
+    background: #d8cfff;   /* Slightly darker pastel */
+    border: 1px solid #c4b5fd;
+}
+.auth-buttons a:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+/* ===== Hero Section ===== */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    padding: 30px 20px 40px;
+}
+.hero-content {
+    background: #fff7e6;   /* SAME as classes section */
+    padding: 60px;
+    border-radius: 20px;   /* Same style as class-card */
+    text-align: center;
+    max-width: 1100px;
+    width: 95%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);  /* Same as class-card */
+}
+.hero-content h1 {
+    font-size: 42px;
+    color: #333;
+}
+.hero-content p {
+    margin: 25px 0;
+    font-size: 19px;
+    color: #555;
+}
+.hero-image {
+    width: 100%;
+    max-width: 600px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 25px auto;
+    display: block;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+.cta-btn {
+    display: inline-block;
+    background: #d8cfff;   /* Same as Sign Up */
+    color: #000;           /* Black text */
+    padding: 8px 18px;     /* SAME as header buttons */
+    font-size: 14px;
+    border-radius: 20px;   /* Same as buttons */
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    border: 1px solid #c4b5fd;
+}
+.cta-btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+/* ===== Info Box Section ===== */
+.info-section {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 30px 20px;
+}
+.info-box {
+    background: #d4f8e8;   /* Soft Mint Green */
+    max-width: 900px;
+    width: 90%;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+/* ===== Classes Section ===== */
+.classes {
+    padding: 50px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+.classes h2 {
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+/* Grid Layout */
+.class-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    gap: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+.class-card {
+    background: #fff7e6;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    text-align: center;
+}
+/* Image */
+.class-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+}
+/* Title */
+.class-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+/* Hover Effect */
+.class-card:hover {
+    transform: translateY(-8px);
+}
+/* ===== Footer ===== */
+footer {
+    background: #ffffff;
+    padding: 40px 20px 20px;
+    border-top: 1px solid #eee;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: auto;
+    gap: 50px;
+}
+/* Follow Us */
+.follow-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    color: #333;
+}
+.social-icons a {
+    font-size: 22px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+/* Brand Colors for Visibility */
+.social-icons a:nth-child(1) { color: #e1306c; }  /* Instagram */
+.social-icons a:nth-child(2) { color: #1877f2; }  /* Facebook */
+.social-icons a:nth-child(3) { color: #25d366; }  /* WhatsApp */
+.social-icons a:nth-child(4) { color: #1da1f2; }  /* Twitter */
+.social-icons a:nth-child(5) { color: #ff0000; }  /* YouTube */
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+/* Address */
+.address {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+/* Contact Box - Pastel Color */
+.contact-box {
+    background: #ffeef8;   /* Soft pastel pink */
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.contact-box h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+.contact-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+.name-row input {
+    width: 50%;
+}
+.contact-box input,
+.contact-box textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+.contact-box textarea {
+    resize: none;
+    height: 80px;
+}
+.contact-box button {
+    padding: 10px;
+    border: none;
+    background: #ff6f61;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.contact-box button:hover {
+    background: #ff3b2e;
+}
+/* Bottom Copyright */
+footer .copyright {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;   /* Black Bold */
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-box {
+        width: 100%;
+        max-width: 400px;
+    }
+    .name-row {
+        flex-direction: column;
+    }
+    .name-row input {
+        width: 100%;
+    }
+    .footer-left {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .class-container {
+        grid-template-columns: 1fr;
+    }
+}
+
